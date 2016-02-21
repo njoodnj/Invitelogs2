@@ -1,0 +1,151 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="10dp"
+android:background="#fef5c7"
+tools:context="com.example.bashayer93.invitelogs2.invitelogs">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/v_id"
+        android:layout_below="@+id/editText13"
+        android:layout_alignLeft="@+id/editText13"
+        android:layout_alignStart="@+id/editText13"
+        android:layout_marginTop="67dp"
+        android:text="id"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="email"
+        android:id="@+id/vemail"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/v_id"
+        android:layout_toStartOf="@+id/v_id" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="vref"
+        android:id="@+id/vref"
+        android:layout_below="@+id/vemail"
+        android:layout_alignLeft="@+id/vemail"
+        android:layout_alignStart="@+id/vemail" />
+
+    <TableLayout
+        android:id="@+id/tbl_test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:layout_marginTop="106dp"
+        android:stretchColumns="2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow android:background="#ffffff" android:layout_margin="1dp">
+
+            <TextView android:text="Name" android:layout_column="0"
+                android:width="50dp" />
+            <TextView android:text="Date" android:layout_column="1"
+                android:width="70dp"
+                android:textAlignment="center" />
+            <TextView android:text="num of visits" android:layout_column="2"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <TextView android:text="remove" android:layout_column="4"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="name"
+                android:id="@+id/vname"
+                android:layout_below="@+id/v_id"
+                android:layout_alignLeft="@+id/v_id"
+                android:layout_alignStart="@+id/v_id"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:id="@+id/vdate"
+                android:layout_below="@+id/vname"
+                android:layout_alignLeft="@+id/vname"
+                android:layout_alignStart="@+id/vname"
+                android:layout_column="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="num"
+                android:id="@+id/vnum"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+            <TextView android:text="" android:layout_column="3" />
+            <Button android:text="delete"
+                android:layout_column="4" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText13"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Welcome to your invite logs" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton"
+        android:text="confirm"
+        android:layout_above="@+id/imageButton3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton3"
+        android:text="Add new visitor"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp" />
+
+</RelativeLayout>
+
