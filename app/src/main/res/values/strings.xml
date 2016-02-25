@@ -3,4 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_invitrlogs">invitrlogs</string>
     <string name="title_activity_invitelogs">invitelogs</string>
+    <string name="title_activity_security_guard">Security_guard</string>
+    <string name="title_activity_entrancelog">Entrancelog</string>
+    <string name="title_activity_reportresident">reportresident</string>
 </resources>

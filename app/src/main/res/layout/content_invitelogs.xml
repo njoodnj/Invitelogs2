@@ -22,26 +22,7 @@ tools:context="com.example.bashayer93.invitelogs2.invitelogs">
         android:textSize="25dp" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="email"
-        android:id="@+id/vemail"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/v_id"
-        android:layout_toStartOf="@+id/v_id" />
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="vref"
-        android:id="@+id/vref"
-        android:layout_below="@+id/vemail"
-        android:layout_alignLeft="@+id/vemail"
-        android:layout_alignStart="@+id/vemail" />
 
     <TableLayout
         android:id="@+id/tbl_test"
@@ -64,6 +45,14 @@ tools:context="com.example.bashayer93.invitelogs2.invitelogs">
                 android:textAlignment="center" />
             <TextView android:text="num of visits" android:layout_column="2"
                 android:textAlignment="center"
+                android:width="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ref_num"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail" />
                 android:width="30dp" />
 
             <TextView android:text="remove" android:layout_column="4"
@@ -113,8 +102,19 @@ tools:context="com.example.bashayer93.invitelogs2.invitelogs">
                 android:textAlignment="center"
                 android:autoText="false" />
 
-            <TextView android:text="" android:layout_column="3" />
-            <Button android:text="delete"
+            <TextView
+                android:text="ref"
+                android:layout_column="3"
+                android:textAlignment="center"
+                android:autoText="false"
+                android:id="@+id/vref"
+                android:layout_below="@+id/vnum"
+                android:layout_alignLeft="@+id/vnum"
+                android:layout_alignStart="@+id/vnum"
+
+                />
+            <Button android:text="delete"  android:id="@+id/delete"
+
                 android:layout_column="4" />
 
         </TableRow>
@@ -130,19 +130,14 @@ tools:context="com.example.bashayer93.invitelogs2.invitelogs">
         android:layout_marginTop="33dp"
         android:text="Welcome to your invite logs" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:id="@+id/imageButton"
-        android:text="confirm"
-        android:layout_above="@+id/imageButton3"
-        android:layout_centerHorizontal="true" />
+
 
     <Button
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:id="@+id/imageButton3"
         android:text="Add new visitor"
+        android:onClick="main_delete"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="89dp" />

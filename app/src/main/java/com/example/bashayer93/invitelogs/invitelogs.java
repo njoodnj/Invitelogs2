@@ -40,7 +40,7 @@ public class invitelogs extends Activity {
         id = getIntent().getStringExtra("r_id");
         name = getIntent().getStringExtra("v_name");
         date = getIntent().getStringExtra("v_date");
-       email = getIntent().getStringExtra("v_email");
+        email = getIntent().getStringExtra("v_email");
         num_of_visits = getIntent().getStringExtra("num_of_visits");
         ref_num = getIntent().getStringExtra("ref_num");
 
@@ -53,4 +53,3 @@ public class invitelogs extends Activity {
         ref_numTV.setText(" "+ref_num);
     }
 }
-

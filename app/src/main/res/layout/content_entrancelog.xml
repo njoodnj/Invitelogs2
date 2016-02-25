@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bashayer93.invitelogs.Entrancelog"
+    tools:showIn="@layout/activity_entrancelog"
+    android:background="#fef5c7">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrance logs"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+
+    <TableLayout
+        android:id="@+id/tbl_test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:layout_marginTop="119dp"
+        android:stretchColumns="2"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow android:background="#ffffff" android:layout_margin="1dp">
+
+            <TextView android:text="Name"
+                android:layout_column="0"
+                android:width="50dp" />
+
+            <TextView android:text="ID"
+                android:layout_column="1"
+                android:width="70dp"
+                android:textAlignment="center" />
+
+
+            <TextView android:text="Date" android:layout_column="2"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <TextView android:text="Time" android:layout_column="2"
+                android:textAlignment="center"
+                android:width="32dp" />
+
+            android:width="30dp" />
+
+            <TextView  android:layout_column="4"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="sarah"
+                android:id="@+id/vname"
+                android:layout_below="@+id/v_id"
+                android:layout_alignLeft="@+id/v_id"
+                android:layout_alignStart="@+id/v_id"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5432102"
+                android:id="@+id/vdate"
+                android:layout_below="@+id/vname"
+                android:layout_alignLeft="@+id/vname"
+                android:layout_alignStart="@+id/vname"
+                android:layout_column="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="22/1/2016"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="01:30:00"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+            />
+            Button android:text="authorize"  android:id="@+id/authorize1"
+
+                android:layout_column="4"
+                android:textSize="10dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="yousef"
+                android:layout_below="@+id/v_id"
+                android:layout_alignLeft="@+id/v_id"
+                android:layout_alignStart="@+id/v_id"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7383922"
+                android:layout_below="@+id/vname"
+                android:layout_alignLeft="@+id/vname"
+                android:layout_alignStart="@+id/vname"
+                android:layout_column="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="22/1/2016"
+                android:id="@+id/vnum"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="01:20:09"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+            />
+            Button android:text="authorize"  android:id="@+id/authorize2"
+
+                android:layout_column="4"
+                android:textSize="10dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="noura"
+                android:layout_below="@+id/v_id"
+                android:layout_alignLeft="@+id/v_id"
+                android:layout_alignStart="@+id/v_id"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9303627"
+                android:layout_below="@+id/vname"
+                android:layout_alignLeft="@+id/vname"
+                android:layout_alignStart="@+id/vname"
+                android:layout_column="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="22/1/2016"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="12:40:50"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+            />
+            Button android:text="authorize"  android:id="@+id/authorize2"
+
+                android:layout_column="4"
+                android:textSize="10dp" />
+
+        </TableRow>
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="ahmad"
+                android:layout_below="@+id/v_id"
+                android:layout_alignLeft="@+id/v_id"
+                android:layout_alignStart="@+id/v_id"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2277192"
+                android:layout_below="@+id/vname"
+                android:layout_alignLeft="@+id/vname"
+                android:layout_alignStart="@+id/vname"
+                android:layout_column="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="22/1/2016"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="12:15:01"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+
+            />
+            Button android:text="authorize"  android:id="@+id/authorize2"
+
+                android:layout_column="4"
+                android:textSize="10dp" />
+
+        </TableRow>
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="lama"
+                android:layout_below="@+id/v_id"
+                android:layout_alignLeft="@+id/v_id"
+                android:layout_alignStart="@+id/v_id"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3322992"
+                android:layout_below="@+id/vname"
+                android:layout_alignLeft="@+id/vname"
+                android:layout_alignStart="@+id/vname"
+                android:layout_column="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="22/1/2016"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="12:03:22"
+                android:layout_below="@+id/vemail"
+                android:layout_alignLeft="@+id/vemail"
+                android:layout_alignStart="@+id/vemail"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:autoText="false" />
+
+
+            />
+            Button android:text="authorize"  android:id="@+id/authorize2"
+
+                android:layout_column="4"
+                android:textSize="10dp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        android:id="@+id/button"
+        android:layout_marginBottom="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:background="#ffffff"
+        android:hint="National Id"
+        android:textColorHint="#b8b7b2"
+        android:textAlignment="center"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
